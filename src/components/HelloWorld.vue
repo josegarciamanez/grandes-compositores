@@ -3,7 +3,7 @@
     <div class="container is-fluid main-container mt-5">
       <div class="columns is-flex is-multiline">
         <div
-          class="column is-one-third-desktop is-half-tablet is-full-mobile px-5 px-md-3 px-lg-2"
+          class="column is-one-third-desktop is-half-tablet is-full-mobile px-3 px-md-3 px-lg-2"
           v-for="(item, idx) in compositores"
           :key="idx"
         >
