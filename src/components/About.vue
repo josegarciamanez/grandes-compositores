@@ -20,7 +20,7 @@
       </p>
     </div>
     <svg
-      class="mt-5 atom"
+      class="mt-5 pb-5 atom"
       xmlns="http://www.w3.org/2000/svg"
       viewBox="-52 -53 100 100"
       stroke-width="1"
@@ -35,13 +35,12 @@
         <circle fill="#fa7c91" r="13"></circle>
       </g>
     </svg>
-    <GsapTools/>
   </div>
 </template>
 
 <script>
 import Nombre from "./Nombre";
-import { TimelineLite } from "gsap";
+import { TimelineMax } from "gsap";
 
 export default {
   name: "About",
@@ -56,7 +55,7 @@ export default {
   },
   mounted() {
     const { atom } = this.$refs;
-    const timeline = new TimelineLite({ id: "timeline" });
+    const timeline = new TimelineMax({ id: "timeline" });
     timeline.to(
       atom,
       1,
@@ -78,8 +77,9 @@ export default {
   }
 };
 </script>
+
 <style scoped>
 .atom {
-  width: 200px;
+  width: 100px;
 }
 </style>

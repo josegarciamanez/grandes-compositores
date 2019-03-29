@@ -3,7 +3,7 @@
     <div class="container is-fluid main-container mt-5">
       <div class="columns is-flex is-multiline">
         <div class="column is-half-desktop is-full-tablet is-full-mobile p-3">
-          <div class="card box animated fadeIn">
+          <div class="card box">
             <div class="card-image">
               <figure class="image">
                 <img :src="compositor.img">
@@ -12,7 +12,7 @@
           </div>
         </div>
         <div class="column is-half-desktop is-full-tablet is-full-mobile p-3">
-          <div class="card box animated fadeIn">
+          <div class="card box">
             <div class="card-content">
               <div class="media">
                 <div class="media-content has-text-centered">
@@ -35,7 +35,7 @@
           </div>
         </div>
         <div class="column is-full">
-          <div class="card box animated fadeIn">
+          <div class="card box">
             <div class="has-text-center">
               <h2 class="has-text-primary mt-5 mb-2">ESCUCHAR OBRAS PRINCIPALES</h2>
               <ul>

@@ -3,11 +3,11 @@
     <div class="container is-fluid main-container mt-5">
       <div class="columns is-flex is-multiline">
         <div
-          class="column is-one-third-desktop is-half-tablet is-full-mobile px-3 px-md-3 px-lg-2"
+          class="column is-one-third-desktop is-half-tablet is-full-mobile"
           v-for="(item, idx) in compositores"
           :key="idx"
         >
-          <div class="card animated fadeIn">
+          <div class="card">
             <div class="card-image">
               <figure class="image">
                 <img :src="item.img">
