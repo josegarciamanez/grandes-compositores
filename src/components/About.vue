@@ -35,12 +35,44 @@
         <circle fill="#fa7c91" r="13"></circle>
       </g>
     </svg>
+    <svg height="100" width="100">
+      <rect
+        id="cuadrado"
+        ref="cuadrado"
+        cx="50"
+        cy="50"
+        width="80"
+        height="40"
+        stroke="none"
+        fill="brown"
+        stroke-width="2"
+      ></rect>
+      <circle
+        id="big"
+        ref="big"
+        cx="50"
+        cy="50"
+        r="40"
+        stroke="none"
+        stroke-width="2"
+        fill="purple"
+      ></circle>
+      <circle
+        id="small"
+        ref="small"
+        cx="50"
+        cy="50"
+        r="20"
+        stroke="none"
+        stroke-width="1"
+        fill="blue"
+      ></circle>
+    </svg>
   </div>
 </template>
 
 <script>
 import Nombre from "./Nombre";
-import { TimelineMax } from "gsap";
 
 export default {
   name: "About",
@@ -54,7 +86,7 @@ export default {
     Nombre
   },
   mounted() {
-    const { atom } = this.$refs;
+    const { atom, cuadrado, big, small } = this.$refs;
     const timeline = new TimelineMax({ id: "timeline" });
     timeline.to(
       atom,
@@ -81,5 +113,9 @@ export default {
 <style scoped>
 .atom {
   width: 100px;
+}
+#big,
+#small {
+  visibility: hidden;
 }
 </style>
